@@ -1,0 +1,22 @@
+{
+  "name": "@matteo-l-tommasi/sorting-algorithms",
+  "version": "0.0.1",
+  "description": "This package is used for sorting algorithms",
+  "main": "lib/es5/index.js",
+  "module": "lib/es6/index.js",
+  "scripts": {
+    "test": "your-test-script",
+    "build": "your-build-script"
+  },
+  "repository": "your-repository-url",
+  "keywords": [
+    "your",
+    "keywords",
+    "here"
+  ],
+  "author": "Matteo L. Tommasi",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "types": "dist/index.d.ts"
+}

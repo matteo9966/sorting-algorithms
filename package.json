@@ -1,0 +1,13 @@
+{
+  "name": "sorting-algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
