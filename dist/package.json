@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "description": "This package is used for sorting algorithms",
   "main": "lib/es5/index.js",
-  "module": "lib/es6/index.js",
+  "module": "lib/es6/index.js", 
   "scripts": {
     "test": "your-test-script",
     "build": "your-build-script"
   },
-  "repository": "your-repository-url",
+  "repository": "https://github.com/matteo9966/sorting-algorithms",
   "keywords": [
     "your",
     "keywords",
@@ -17,6 +17,5 @@
   "author": "Matteo L. Tommasi",
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {},
-  "types": "dist/index.d.ts"
+  "devDependencies": {}
 }
