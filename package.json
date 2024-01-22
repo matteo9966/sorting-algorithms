@@ -1,6 +1,6 @@
 {
-  "name": "sorting-algorithms",
-  "version": "1.0.1",
+  "name": "@matteo-luigi-tommasi/sorting-algorithms-with-src",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
