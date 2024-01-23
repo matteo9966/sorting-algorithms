@@ -1,24 +1,10 @@
-import { BubbleSortAnimation } from "../types/animationQueue.type";
-// export const bubbleSort = <T>(list: T[]) => {
-//   const phases = [];
-//   phases.push([...list]);
-//   let swapped = false;
-//   for (let j = 0; j < list.length; j++) {
-//     for (let k = 0; k < list.length - j - 1; k++) {
-//       if (list[k] > list[k + 1]) {
-//         [list[k], list[k + 1]] = [list[k + 1], list[k]];
-//         phases.push([...list]);
-//         swapped = true;
-//       }
-//     }
-//     if (!swapped) {
-//       break;
-//     }
-//   }
-//   return phases;
-// };
 
-//use an animation queue, add each function to a queue and call it on every tick recieved by the centralized counter
+export type BubbleSortAnimation = {
+  animationFn: "itarationAnimation" | "swapAnimation";
+  listStatus: number[];
+  currentIndex: number;
+  sortType: "bubble-sort";
+};
 
 export const bubbleSort = (
   list: number[],

@@ -2,7 +2,7 @@ export type InsertionSortAnimation = {
   listStatus: number[];
   currentIndex: number;
   iterationIndex: number;
-  animationFn: "iterationAnimation" | "swapAnimation";
+  animationFn: "iterationAnimation" | "growAnimation" | "settleAnimation";
   sortType: "insertion-sort";
 };
 
@@ -36,7 +36,7 @@ export function insertionSort(list: number[]): InsertionSortAnimation[] {
       });
       list[k + 1] = list[k];
       animationQueue.push({
-        animationFn: "swapAnimation",
+        animationFn: "growAnimation",
         currentIndex: j,
         iterationIndex: k,
         listStatus: [...list],
@@ -46,9 +46,9 @@ export function insertionSort(list: number[]): InsertionSortAnimation[] {
     }
     list[k + 1] = temp;
     animationQueue.push({
-      animationFn: "swapAnimation",
+      animationFn: "settleAnimation",
       currentIndex: j,
-      iterationIndex: k,
+      iterationIndex: k+1,
       listStatus: [...list],
       sortType: "insertion-sort",
     });
